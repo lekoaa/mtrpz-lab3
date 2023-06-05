@@ -8,7 +8,7 @@ router = APIRouter()
 def hello_world() -> dict:
     return {'msg': 'Hello, World!'}
 
-@router.get('')
+@router.get('/matrix')
 def matrix() -> dict:
     matrix_a = np.random.rand(10, 10).tolist()
     matrix_b = np.random.rand(10, 10).tolist()
